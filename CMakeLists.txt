@@ -17,7 +17,7 @@ add_library(imgui_core STATIC
 	${CMAKE_CURRENT_SOURCE_DIR}/imgui_draw.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/imgui_tables.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/imgui_widgets.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
+	#${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
 	#${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_sdl2.cpp
 	#${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_sdlrenderer2.cpp
 	)
