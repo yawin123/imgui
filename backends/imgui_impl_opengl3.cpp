@@ -356,7 +356,7 @@ bool    ImGui_ImplOpenGL3_Init(const char* glsl_version)
 #elif defined(__APPLE__)
         glsl_version = "#version 150";
 #else
-        glsl_version = "#version 130";
+        glsl_version = "#version 100";
 #endif
     }
     IM_ASSERT((int)strlen(glsl_version) + 2 < IM_ARRAYSIZE(bd->GlslVersionString));
@@ -768,7 +768,7 @@ bool    ImGui_ImplOpenGL3_CreateDeviceObjects()
 #endif
 
     // Parse GLSL version string
-    int glsl_version = 130;
+    int glsl_version = 100;
     sscanf(bd->GlslVersionString, "#version %d", &glsl_version);
 
     const GLchar* vertex_shader_glsl_120 =
